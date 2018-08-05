@@ -1,0 +1,85 @@
+var friends=[
+{
+    "name":"Morgan",
+    "photo":"https://img.buzzfeed.com/buzzfeed-static/static/2015-05/26/16/enhanced/webdr11/enhanced-25006-1432672156-27.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+    "scores":[
+        1,
+        1,
+        1,
+        2,
+        3,
+        1,
+        1,
+        4,
+        5,
+        1
+      ]
+  },
+  {
+  "name": "Ryan",
+  "photo":"https://img.buzzfeed.com/buzzfeed-static/static/2015-05/26/16/enhanced/webdr15/enhanced-8423-1432672283-30.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+  "scores":[
+      5,
+      3,
+      4,
+      3,
+      2,
+      1,
+      4,
+      5,
+      2,
+      3
+    ]
+},
+
+{
+"name":"James",
+"photo":"https://img.buzzfeed.com/buzzfeed-static/static/2015-05/27/12/enhanced/webdr12/enhanced-31232-1432743652-8.jpg?downsize=715:*&output-format=auto&output-quality=auto",
+"scores":[
+    4,
+    2,
+    3,
+    1,
+    5,
+    3,
+    4,
+    2,
+    3,
+    4
+  ]
+},
+{
+"name":"Nicole",
+"photo":"https://img.buzzfeed.com/buzzfeed-static/static/2015-05/26/16/enhanced/webdr09/enhanced-13254-1432671778-25.jpg?downsize=715:*&output-format=auto&output-quality=auto",
+"scores":[
+    3,
+    5,
+    2,
+    4,
+    1,
+    5,
+    3,
+    4,
+    4,
+    5
+  ]
+},
+{
+"name":"Evan",
+"photo":"https://img.buzzfeed.com/buzzfeed-static/static/2015-05/26/16/enhanced/webdr15/enhanced-7725-1432671840-23.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+"scores":[
+    5,
+    1,
+    4,
+    4,
+    5,
+    1,
+    2,
+    5,
+    4,
+    1
+  ]
+}
+];
+
+module.exports=friends;

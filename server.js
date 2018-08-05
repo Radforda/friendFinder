@@ -28,7 +28,7 @@ app.get("/survey", function(req, res) {
   res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
 
-// Displays all characters
+// Displays all avalible friends
 app.get("/api/friends", function(req, res) {
 
         console.log(friends);
@@ -56,14 +56,14 @@ var find=function (friends, survey){
   console.log(match);
   return match;
 }
-// Create New Characters - takes in JSON input
+// Create New Friend and match 
 app.post("/api/friends", function(req, res) {
-  var survey = req.body.questions;
+  var survey = req.body.scores;
 //find most compatible friend
 
-  console.log(survey);
+  console.log("friend object: "+req.body);
   var match=find(friends, survey);
-  
+  friends.push(req.body);
   res.json(match);
 });
 

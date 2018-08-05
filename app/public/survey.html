@@ -26,7 +26,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -137,7 +136,7 @@
         $.post("/api/friends", Survey)
             .then(function(data) {
             console.log("survey.html", data);
-            alert("looking for friend...");
+            
             $("#modal").modal("show");
             $("#name").text(data.name);
             $("#pic").attr("src", data.photo)
@@ -146,16 +145,6 @@
 
     });
 
-    $("#view-btn").on("click", function(event) {
-      event.preventDefault();
-      
-
-        $.get("/api/friends")
-            .then(function(data) {
-            console.log("survey.html", data);
-            alert("Getting a list of Friends");
-            });
-        });
     
   </script>
 
